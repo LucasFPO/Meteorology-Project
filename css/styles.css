@@ -1,10 +1,22 @@
-body {
-    /* The body has a default margin, which we do not want interfering
-     without image header, which is why we have set it to 0 */
+/* Responsive Style */
+body, html {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+section, div, main {
+    box-sizing: border-box;
+}
+
+
+/* Meteorology font */
+body {
     font-family: sans-serif;
 }
 
+/* Hero Style */
 .hero {
     /* Sizing
     vw (viewport widht)
@@ -16,7 +28,7 @@ body {
     We want our text to be centered both horizontally and vertically
     within our hero section, so it shows up in the middle of the screen.
     The best way to do this is using flexboxes */ 
-    display: flex; /* Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. */
+    display: flex; 
     justify-content: center;
     align-items: center;
 
@@ -40,5 +52,23 @@ body {
 .hero h1 {
     /* Text styles */
     font-size: 7em;
+}
+
+
+/* Main Section (major phenomena) */
+/* Avoid Overflow */
+ .main {
+     max-width: 100%;
+ }
+
+
+.row {
+    cursor: pointer;
+    margin: 0;  
+    padding: 0;
+}
+
+.row img {
+width: 100%;
 }
 
