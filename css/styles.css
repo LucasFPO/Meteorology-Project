@@ -6,7 +6,7 @@ body, html {
     height: 100%;
   }
 
-section, nav, main, div {
+section, main, div {
     box-sizing: border-box;
 }
 
@@ -55,10 +55,10 @@ body {
     cursor:default;
 }
 
-
-/* Main Section (major phenomena) */
+/*
+ Main Section (major phenomena) 
 .container {
-    /*Avoid Overflow*/ 
+    /*Avoid Overflow 
      max-width: 100%;
      margin: 0;
      padding: 0;
@@ -85,5 +85,17 @@ main {
   line-height: 24px;
   padding: 24px;
   text-transform: uppercase;
+} */
+main{
+    cursor: pointer;
 }
 
+#wrapper_row_1, #wrapper_row_2{
+     width: 100%;    
+     display:flex;
+    
+}
+
+.inner_div{
+    border: 2px solid black;
+}
