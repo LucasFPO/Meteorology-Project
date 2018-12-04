@@ -6,14 +6,14 @@ body, html {
     height: 100%;
   }
 
-section, main, div {
+section, .main, div {
     box-sizing: border-box;
 }
 
 
 /* Text font */
 body {
-    font-family: sans-serif;
+    font-family:'Roboto', sans-serif; 
 }
 
 /* Hero Style */
@@ -55,27 +55,10 @@ body {
     cursor:default;
 }
 
+
 /*
  Main Section (major phenomena) 
-.container {
-    /*Avoid Overflow 
-     max-width: 100%;
-     margin: 0;
-     padding: 0;
- }
 
-main {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.row {
-    cursor: pointer;
-    margin: 0;  
-    padding: 0;
-    width: 100%;
-}
 
 .col-sm-3{
   box-sizing: border-box;
@@ -86,16 +69,29 @@ main {
   padding: 24px;
   text-transform: uppercase;
 } */
-main{
+.main{
     cursor: pointer;
 }
 
-#wrapper_row_1, #wrapper_row_2{
+.mainSection{
      width: 100%;    
      display:flex;
-    
+    /*For items go onto a new line if they are too big, we can use the flex-wrap property*/
+    flex-wrap:wrap;
 }
 
-.inner_div{
+.innerMainSection{
     border: 2px solid black;
+}
+
+
+/* Footer */
+.footer{
+    background-color: black;
+    text-align: center;
+    color: white; 
+    cursor:default;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
