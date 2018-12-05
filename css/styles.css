@@ -58,6 +58,7 @@ body {
 
 /* Main Section (major phenomena)*/ 
 
+/* Background block Style */
 .parent {
     width: 45%;
     margin: 20px;
@@ -68,7 +69,8 @@ body {
     display: inline-block;
 	cursor: pointer;
 }
- 
+
+/* Image Style */
 .child {
     height: 100%;
     width: 100%;
@@ -81,14 +83,15 @@ body {
 }
 
 .bg-one {background-image: url(../img/Wind.jpg);}
-.bg-two {background-image: url(../img/ColdWave.jpg);}
-.bg-three {background-image: url(../img/Hurricane.jpg);}
+.bg-two {background-image: url(../img/Hurricane.jpg);}
+.bg-three {background-image: url(../img/ColdWave.jpg);}
 .bg-four {background-image: url(../img/Blizzard.jpg);}
 .bg-five {background-image: url(../img/HeatWave.jpg);}
-.bg-six {background-image: url(../img/ElNino_and_ElNina.jpg);}
-.bg-seven {background-image: url(../img/Drought.jpg);}
+.bg-six {background-image: url(../img/Drought.jpg);}
+.bg-seven {background-image: url(../img/ElNino_and_ElNina.jpg);}
 .bg-eight {background-image: url(../img/Flood.jpg);}
 
+/* Text(link)  Style */
 a {
     display: none;
     font-size: 35px;
@@ -106,7 +109,9 @@ a {
     
 }
 
-.parent:hover .child, .parent:focus .child {
+/* Zooming Effect */
+/* A focus style is good for accessibility */
+.parent:hover .child, .parent:focus .child { 
     -ms-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -114,15 +119,18 @@ a {
     transform: scale(1.1);
 }
 
+/* Zooming Effect with Opacity */
 .parent:hover .child:before, .parent:focus .child:before {
     display: block;
-		opacity: 0.7;
+	opacity: 0.7;
 }
 
+/* Make overlay visible only when we hover on the .parent */
 .parent:hover a, .parent:focus a {
     display: block;
 }
 
+/* Hover event Style */ 
 .child:before {
     content: "";
     display: block;
@@ -133,7 +141,7 @@ a {
     top: 0;
     left: 0;
     background-color: rgba(52,73,94,0.75);
-	    -webkit-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
@@ -142,7 +150,7 @@ a {
 /* Media Queries */
 @media screen and (max-width: 960px) {
     .parent {width: 100%; margin: 20px 0px}
-		.wrapper {padding: 20px 20px;}
+	.wrapper {padding: 20px 20px;}
 }
 
 
