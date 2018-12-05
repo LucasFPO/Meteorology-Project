@@ -35,12 +35,11 @@
     <!-- The "ng-controller" is called a directive. It tells AngularJS that the "MainController"
          controller will live within the <div class=> element, termed the controller's scope. -->
     <div class="main" ng-Controller="MainController">
-        <div class="mainSection">
-            <div ng-repeat="image in images"> 
-                <div class="innerMainSection">
-                    <!-- The "ng-src" is a directive that sets the "<img>" element's "src" to
-               a property in the controller--> 
-                    <img ng-src= "{{image.name}}">
+            <div ng-repeat="catalog in catalogs"> 
+                <div class="parent" onclick="">
+                    <div class="child" background-image-directive="{{catalog.url}}" style="height: 300px">
+                    <a href="#">{{ catalog.name }} </a> 
+                </div>
                 </div>
             </div>
         </div>
@@ -48,7 +47,7 @@
 
     <div class="footer">
         <div>
-          <h3>&copy; Created by Lucas Oliveira</h2>
+          <h3>&copy; 2018 Lucas Oliveira</h2>
         </div>
     </div>
 

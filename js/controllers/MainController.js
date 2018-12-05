@@ -1,30 +1,46 @@
 // We created a new controller named "MainController". A controller 
 // manages the app's data. 
 app.controller('MainController', ['$scope', function($scope) { 
-    $scope.images = [ 
+    $scope.catalogs = [ 
         {
-            name: 'img/Wind.jpg'
+            "url": "img/Wind.jpg",
+            "name": "Wind"
         },
         {
-            name: 'img/ColdWave.jpg'
+            "url": "img/ColdWave.jpg",
+            "name": "Cold Wave"
         },
         {
-            name: 'img/HeatWave.jpg'
+            "url": "img/HeatWave.jpg",
+            "name": "Heat Wave"
         },
         {
-            name: 'img/ElNino_and_ElNina.jpg'
+            "url": "img/ElNino_and_ElNina.jpg",
+            "name": "El Niño and El Niña"
         },
         {
-            name: 'img/Hurricane.jpg'
+            "url": "img/Hurricane.jpg",
+            "name": "Hurricane"
         },
         {
-            name: 'img/Blizzard.jpg'
+            "url": "img/Blizzard.jpg",
+            "name": "Blizzard"
         },
         {
-            name: 'img/Drought.jpg'
+            "url": "img/Drought.jpg",
+            "name": "Drought"
         },
         {
-            name: 'img/Flood.jpg'
+            "url": "img/Flood.jpg",
+            "name": "Flood"
         }
     ];
 }]);
+
+app.directive('backgroundImageDirective', function () {
+    return function (scope, element, attrs) {
+        element.css({
+            'background-image': 'url(' + attrs.backgroundImageDirective + ')',            
+        });
+    };
+});
