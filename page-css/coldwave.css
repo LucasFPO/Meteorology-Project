@@ -1,0 +1,56 @@
+/* Responsive Style */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+section, .main, div, footer {
+    box-sizing: border-box;
+}
+
+
+/* Text font */
+body {
+    font-family:'Roboto', sans-serif; 
+}
+
+/* Hero Style */
+.hero {
+    /* Sizing
+    vw (viewport widht)
+    vh (viewport height) */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff 
+    We want our text to be centered both horizontally and vertically
+    within our hero section, so it shows up in the middle of the screen.
+    The best way to do this is using flexboxes */ 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles
+    we also need to make sure that our actual text is centered,
+    not just the elements that the text is in. We can do this
+    simply by using text-align: center */
+    text-align: center;
+    color: white; 
+
+    /* Background styles */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/ColdWave.jpg); 
+    /* Background-image doesn’t take colors. But it does take gradients! So, we can make a gradient between two colors
+     that are the same, and effectively use a ‘color’ as a background-image in order to DARKEN THE BACKGROUND IMAGE */
+    background-size: cover; /* Makes sure that our background is large enough to cover the entire hero. */
+    background-position: center center; /* Positions the image so that it is in the center of the screen. */
+    background-repeat: no-repeat; /* Stops the image from repeating/tiling. */
+    background-attachment: fixed; /* Makes the background image stay in the same spot, even you scroll down the page. */
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 7em;
+    cursor:default;
+}

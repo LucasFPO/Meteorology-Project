@@ -31,7 +31,7 @@ body {
     display: flex; 
     justify-content: center;
     align-items: center;
-
+    
     /* Text styles
     we also need to make sure that our actual text is centered,
     not just the elements that the text is in. We can do this
@@ -152,7 +152,6 @@ a {
     .parent {width: 100%; margin: 20px 0px}
 	.wrapper {padding: 20px 20px;}
 }
-
 
 
 /* Footer */
