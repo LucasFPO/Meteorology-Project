@@ -6,7 +6,7 @@ body, html {
     height: 100%;
   }
 
-section, .main, div, footer {
+section, .main, div {
     box-sizing: border-box;
 }
 
@@ -26,12 +26,23 @@ body {
     opacity:0.7;
 }
 
-
+/* Major Phenomenon Section */
 main {
     background-color: rgba(52,73,94,0.75);
     opacity:0.7;
 }
-.question {
+
+#question {
     color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.question3 {
+    padding-bottom: 20px;
+    margin-bottom: 70px;
+}
+
+.answer {
     text-align: center;
 }
