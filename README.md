@@ -19,3 +19,13 @@ The contents of each topic were taken from the respective sites below:
 .blizzard:
  - https://scied.ucar.edu/shortcontent/snowstorms
  - https://www.youtube.com/watch?v=BpBtRmTmbqQ
+
+.flood:
+ - https://www.metoffice.gov.uk/learning/precipitation/rain/why-does-it-rain
+ - https://www.youtube.com/watch?v=Qe350nm_odA
+ - https://eos.org/research-spotlights/what-causes-heavy-rainfall
+
+.drought:
+ - https://www.livescience.com/21469-drought-definition.html
+ - https://www.livescience.com/21688-drought-health-effects.html
+ 
