@@ -14,7 +14,7 @@ The contents of each topic were taken from the respective sites below:
  - https://www.youtube.com/watch?v=xKubdY2mHXc
 
 .cold wave:
-
+ - https://www.youtube.com/watch?v=Wy-t4MzrHvI
 
 .blizzard:
  - https://scied.ucar.edu/shortcontent/snowstorms
@@ -29,3 +29,10 @@ The contents of each topic were taken from the respective sites below:
  - https://www.livescience.com/21469-drought-definition.html
  - https://www.livescience.com/21688-drought-health-effects.html
  
+.el niño and el niña:
+ - https://oceanservice.noaa.gov/facts/ninonina.html
+ - https://www.classzone.com/books/earth_science/terc/content/investigations/esu601/esu601page02.cfm
+
+.heatwave:
+ - https://scijinks.gov/heat/
+ - https://www.metoffice.gov.uk/learning/temperature/heatwave 
